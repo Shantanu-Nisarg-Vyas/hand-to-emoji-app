@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Hand To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <center>
+
+            <p class="heading">Hand to Emoji App
+                <br><br>
+                <span class="Handemoji">&#9995</span>
+                <span class="Handemoji">&#9996</span>
+                <span class="Handemoji">&#128077</span>
+                <span class="Handemoji">&#128078</span>
+                <span class="Handemoji">&#128591</span>
+            </p>
+            <p style="font-size: 22px;">Take the picture of your hand
+            </p>
+
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                <label>Webcam View - </label>
+            </div>
+            <div id="camera">
+            </div>
+            <br><br><br>
+            <div id="result">
+            </div>
+            <div>
+                <br><br>
+                <button class="btn btn-warning" onclick="capture()">Capture Photo</button>
+                <button class="btn btn-success" onclick="predict()">Predict Image</button>
+                <br><br>
+                <label>Prediction 1</label>
+                <p class="Hand_name" id="result_hand1"></p>
+                <p class="Handemoji" id="Hand_1"> </p>
+                <p id="accuracy_1"> </p>
+                <br>
+                <label>Prediction 2</label>
+                <p class="Hand_name" id="result_hand2"></p>
+                <p class="Handemoji" id="Hand_2"> </p>
+                <p id="accuracy_2"> </p>
+            </div>
+
+        </center>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

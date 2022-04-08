@@ -1,0 +1,27 @@
+body {
+  color: plum;
+  background-color: maroon;
+  text-align: center;
+}
+
+span {
+  font-size: 30px;
+}
+
+#result_hand1,
+#result_hand2 {
+  color: black;
+}
+
+.Hand_name {
+  font-size: 40px;
+}
+
+.Handemoji {
+  font-size: 60px;
+}
+
+.heading {
+  font-size: 40px;
+  border: 5px solid purple;
+}
