@@ -67,7 +67,7 @@ function gotResults(error, results) {
             document.getElementById("Hand_2").innerHTML = "&#9996";
         } else if (results[1].label == "Thumbs Up") {
             document.getElementById("Hand_2").innerHTML = "&#128077";
-        } else if (results[0].label == "Thumbs Down") {
+        } else if (results[1].label == "Thumbs Down") {
             document.getElementById("Hand_2").innerHTML = "&#128078";
         } else {
             document.getElementById("Hand_2").innerHTML = "&#128694";
